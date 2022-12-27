@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <!-- Title-->
+  <title>Designer page</title>
+  <!-- Description-->
+  <meta name="description" content="Personal Portfolio Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="icon" type="image/png" sizes="16x16" href="">
+  <!-- Web fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
+ 
+  <!-- CSS vendors-->
+  <link rel="stylesheet" href="css/bootstrap-custom.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/lity.min.css">
+  <link rel="stylesheet" href="css/simplebar.min.css">
+  <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
+  <!-- Main CSS-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="js/style.css">
+  <!-- CSS Color scheme-->
+  <link id="color-scheme" rel="stylesheet" href="css/colors/main-darkgreen.css">
+  <!-- Custom CSS (Add your custom CSS styles to this file)-->
+  <link rel="stylesheet" href="css/custom.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <!-- removeIf(customizerDist)-->
+ <script type="text/javascript">
+/// some script
+
+// jquery ready start
+$(document).ready(function() {
+	// jQuery code
+
+	  $("[data-trigger]").on("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var offcanvas_id =  $(this).attr('data-trigger');
+        $(offcanvas_id).toggleClass("show");
+        $('body').toggleClass("offcanvas-active");
+        $(".screen-overlay").toggleClass("show");
+
+    }); 
+
+
+   	// Close menu when pressing ESC
+    $(document).on('keydown', function(event) {
+        if(event.keyCode === 27) {
+           $(".offcanvas").removeClass("show");
+           $("body").removeClass("overlay-active");
+        }
+    });
+
+    $(".btn-close, .screen-overlay").click(function(e){
+    	$(".screen-overlay").removeClass("show");
+        $(".offcanvas").removeClass("show");
+        $("body").removeClass("offcanvas-active");
+
+
+    }); 
+	
+}); // jquery end
+</script>
+
+<style type="text/css">
+
+
+.offcanvas-active{
+	overflow:hidden;
+}
+
+.screen-overlay {
+  width:0%;
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity:0;
+  visibility:hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+   }
+.screen-overlay.show {
+    transition:opacity .5s ease, width 0s;
+    opacity:1;
+    width:100%;
+    visibility:visible;
+}
+
+.offcanvas{
+	width:350px;
+	visibility: hidden;
+	transform:translateX(-100%);
+	transition:all .2s;
+  border-radius:0; 
+  box-shadow: 0 5px 10px rgba(0,0,0, .2);
+	display:block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1200;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.offcanvas.offcanvas-right {
+   right: 0;
+   left: auto;
+   transform: translateX(100%); 
+ }
+
+.offcanvas.show{
+	visibility: visible;
+    transform: translateX(0);
+    transition: transform .2s;
+}
+
+.offcanvas .btn-close{ position: absolute; right:15px; top:15px; }
+
+
+</style>
+  <!-- endremoveIf(customizerDist)-->
+<style>
+
+
+
+
+
+
+
+
+body .container01 input {
+  display: none;
+}
+body .container01 input:checked + label {
+  background: #c4151b;
+}
+body .container01 input#tab1:checked ~ .line {
+  left: 0%;
+}
+body .container01 input#tab1:checked ~ .content-container #c1 {
+  opacity: 1;
+}
+body .container01 input#tab2:checked ~ .line {
+  left: 49%;
+}
+body .container01 input#tab2:checked ~ .content-container #c2 {
+  opacity: 1;
+}
+body .container01 input#tab3:checked ~ .line {
+  left: 50%;
+}
+body .container01 input#tab3:checked ~ .content-container #c3 {
+  opacity: 1;
+}
+body .container01 input#tab4:checked ~ .line {
+  left: 75%;
+}
+body .container01 input#tab4:checked ~ .content-container #c4 {
+  opacity: 1;
+}
+body .container01 label {
+  display: inline-block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  width: 48%;
+  text-align: center;
+  background: black;
+  color: #fff;
+  position: relative;
+  transition: 0.25s background ease;
+  cursor: pointer;
+}
+body .container01 label::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background: #ccc;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  transition: 0.25s ease;
+}
+body .container01 label:hover::after {
+  opacity: 1;
+}
+body .container01 .line {
+  position: absolute;
+  height: 2px;
+  background: #f44336;
+  width: 48%;
+      top: 78px;
+  
+  left: 0;
+  transition: 0.25s ease;
+}
+body .container01 .content-container {
+  background: #fff;
+  position: relative;
+  height: 100px;
+  font-size: 16px;
+}
+body .container01 .content-container .content {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: 0.25s ease;
+  color: #333;
+}
+body .container01 .content-container .content h3 {
+  font-weight: 200;
+  margin: 10px 0;
+}
+body .container01 .content-container .content p {
+  margin: 10px 0;
+}
+body .container01 .content-container .content p, body .container01 .content-container .content i {
+  font-size: 13px;
+}
+
+
+.san-header {
+    background-color: #cecece;
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+</style>
+</head>
+
+<body class="theme-dark">
+    
+
+
+  <button id = "btn">Click to open</button>
+
+   
+    
+  <!-- Preloader-->
+  <div class="preloader">
+    <div class="preloader-block">
+      <div class="preloader-icon"><span class="loading-dot loading-dot-1"></span><span class="loading-dot loading-dot-2"></span><span class="loading-dot loading-dot-3"></span></div>
+    </div>
+  </div>
+  <div id="overlay-effect"></div>
+  <!-- Navbar-->
+  <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="#home-area">
+      <!-- Navbar Logo-->
+      <img class="img-fluid" src="img/logo.png" alt="Logo"></a>
+    <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span class="btn-line"></span></span>
+    <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
+      <!-- Navbar menu-->
+	  
+	  <div class="can-toggle">
+  <input id="a" type="checkbox">
+  <label for="a">
+    <div class="can-toggle__switch" data-checked="2D" data-unchecked="3D"></div>
+  </label>
+</div>
+
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about"><i class="icon ion-md-camera"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume"><i class="icon ion-md-information-circle"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio"><i class="icon ion-ios-settings"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog"><i class="icon ion-ios-copy"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="icon ion-ios-share"></i></a></li>
+      </ul>
+        
+    </div>
+  </nav>
+   <aside class="offcanvas offcanvas-right" id="my_offcanvas2">
+  <header class="p-4 bg-light border-bottom">
+    <button class="btn btn-outline-danger btn-close"> &times Close </button>
+    <h6 class="mb-0">Second offcanvas </h6>
+  </header>
+  <nav class="list-group list-group-flush">
+    <a href="#" class="list-group-item">Home</a>
+    <a href="#" class="list-group-item">About us</a>
+    <a href="#" class="list-group-item">Menu name 1</a>
+    <a href="#" class="list-group-item">Menu name 2</a>
+    <a href="#" class="list-group-item">Menu name 3</a>
+  </nav>
+</aside>
+  <!-- Home-->
+  <section class="home-area element-cover-bg" id="home" style="background-image:url(img/cbg.png); background-repeat: repeat; background-size:auto;">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center">
+        
+      </div>
+    </div>
+      
+    <div class="fixed-wrapper">
+      <!-- Languages list-->
+      <!-- offcanvas panel right -->
+        <section class="section-content py-5">
+		<button data-trigger="#my_offcanvas1" class="btn btn-primary" type="button">  Show offcanvas left  </button>
+    <button data-trigger="#my_offcanvas2" class="btn btn-primary" type="button">  Show offcanvas right  </button>
+        </section>
+
+<!-- offcanvas panel right .end -->
+      <!-- Social media icons-->
+      <div class="fixed-block block-right">
+        <ul class="list-unstyled social-icons">
+          <li><a href="#0"><i class="icon ion-md-cube"></i></a></li>
+          <li><a href="#0"><i class="icon ion-md-brush"></i></a></li>
+          <li><a href="#0"><i class="icon ion-ios-clock"></i></a></li>
+          <li><a href="#0"><i class="icon ion-ios-move"></i></a></li>
+          <li><a href="#0"><i class="icon ion-ios-home"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- About lightbox-->
+  
+  <!-- Resume lightbox-->
+  
+  <!-- Portfolio lightbox-->
+  
+  <!-- Blog lightbox-->
+  
+  <!-- Contact lightbox-->
+  
+  <!-- removeIf(customizerDist)-->
+  
+  <!-- endremoveIf(customizerDist)-->
+  <!-- Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Custom JS (Add your custom JS scripts to this file)-->
+ 
+
+  
+   <script id="rendered-js" >
+var x = document.getElementById("btn");
+x.addEventListener("click", myFunction, false);
+
+function myFunction() {
+  var y = document.getElementById("box");
+  if (y.className === "active") {
+    y.className = "";
+  } else {
+    y.className = "active";
+  }
+
+};
+
+function dltFun() {
+  var z = document.getElementById("box");
+
+  if (z.className === "active") {
+    z.className = "";
+  } else {
+    z.className = "active";
+  }
+
+}
+
+    </script>
+    
+</body>
+
+
+</html>
